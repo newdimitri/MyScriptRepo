@@ -82,10 +82,10 @@ class ji(object):
                 resss["gender"] = gender_list[gender_prediction[0].argmax()]
                 
                 if(gender_list[gender_prediction[0].argmax()]=="f"):
-                    draw.text((d.left(),d.top()-50),u'Female',fill = "#00ff00")
+                    draw.text((d.left(),d.top()-10),u'Female',fill = "#00ff00")
                     word.save("out.jpg")
                 if(gender_list[gender_prediction[0].argmax()]=="m"):
-                    draw.text((d.left(),d.top()-50),u'Male',fill = "#00ff00")
+                    draw.text((d.left(),d.top()-10),u'Male',fill = "#00ff00")
                     word.save("out.jpg")
                 resss["coordinate"] = ress
                 llist.append(resss)
